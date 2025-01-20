@@ -51,7 +51,8 @@ pip install numpy scipy
   │   └── LAKE-LAKE3.0             # LAKE model directory
   │       ├── setup
   │       ├── data
-```
+
   │       ├── results
   │       └── lake.out
-
+   ```
+``
