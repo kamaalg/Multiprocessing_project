@@ -55,4 +55,10 @@ pip install numpy scipy
   │       ├── results
   │       └── lake.out
    ```
-``
+## Contact
+
+For questions or further information, please contact:
+
+- **Name**: Kamal Gurbanov  
+- **Email**: [kamalgurbanov916@gmail.com](mailto:kamalgurbanov916@gmail.com)
+
