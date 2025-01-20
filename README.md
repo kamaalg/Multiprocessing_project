@@ -40,6 +40,31 @@ pip install numpy scipy
 ---
 
 ## Usage
+```python
+from sensitivity_analysis import SensitivityAnalysis
+
+# Initialize the SensitivityAnalysis instance
+sa = SensitivityAnalysis(work_dir="model_output", path_to_model_dir="LAKE-LAKE3.0")
+
+# Create 5 directories for the LAKE model
+sa.create_directories_auto(number_directories=5)
+
+# Generate setup and driver files for the created directories
+sa.generate_and_write_files(num_files=5)
+# Run the LAKE model for a specific project directory
+sa.run_model(rundirectory="model_output", project_directory="LAKE0")
+# Define parameter names and their corresponding target values
+params = ["param1", "param2"]
+target_values = [[value1, value2], [value3, value4]]
+
+# Perform sensitivity analysis for 5 projects
+sa.create_and_run_sensitivity_analysis(
+    number=5,                  # Number of projects
+    p_name=params,             # Parameter names
+    target_values=target_values,  # Target values for parameters
+    rundirectory="model_output"  # Directory for running the analysis
+)
+```
 
 ---
 
