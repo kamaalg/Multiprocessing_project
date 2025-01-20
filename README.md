@@ -7,8 +7,9 @@ This project provides a comprehensive framework for running sensitivity analyses
 ## Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
-- 
+- [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Note](#note)
 - [Contact](#contact)
 
 ---
@@ -41,6 +42,7 @@ pip install numpy scipy
 
 ## Usage
 ```python
+
 from sensitivity_analysis import SensitivityAnalysis
 
 # Initialize the SensitivityAnalysis instance
@@ -80,6 +82,14 @@ sa.create_and_run_sensitivity_analysis(
   │       ├── results
   │       └── lake.out
    ```
+
+---
+
+## Note
+To run the program, users must obtain their own customized **LAKE model**, as this script is specifically designed for the parallelization of the **LAKE model**. Ensure the model is properly configured and integrated before execution.
+
+
+---
 ## Contact
 
 For questions or further information, please contact:
