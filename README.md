@@ -44,12 +44,14 @@ pip install numpy scipy
 ---
 
 ## Project Structure
+```
   ├── SensitivityAnalysis
   │   ├── sensitivity_analysis.py  # Main script
   │   ├── model_output             # Output directory
   │   └── LAKE-LAKE3.0             # LAKE model directory
   │       ├── setup
   │       ├── data
+```
   │       ├── results
   │       └── lake.out
 
